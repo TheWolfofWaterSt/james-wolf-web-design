@@ -2,44 +2,47 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { site } from "@/lib/site";
 
 const navLinks = [
   { href: "/work", label: "Work" },
+  { href: "/#process", label: "Process" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface-border/80 bg-surface/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-surface-border bg-surface shadow-soft">
       <nav
-        className="container-content flex items-center justify-between gap-6 px-5 py-4 sm:px-6 lg:px-8"
+        className="mx-auto flex w-full max-w-[1100px] items-center justify-between gap-6 px-5 py-4"
         aria-label="Main navigation"
       >
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-ink transition hover:text-accent sm:text-base"
+          className="font-display text-sm font-semibold text-ink transition hover:text-accent sm:text-base"
         >
-          {site.name}
+          James Wolf{" "}
+          <span className="text-accent">Web Design</span>
         </Link>
 
-        <ul className="flex items-center gap-1 sm:gap-2">
+        <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => {
             const isActive =
-              pathname === link.href ||
-              (link.href === "/work" && pathname.startsWith("/work"));
+              link.href === "/work"
+                ? pathname.startsWith("/work")
+                : link.href === "/about"
+                  ? pathname === "/about"
+                  : false;
 
             return (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`rounded-md px-3 py-2 text-sm font-medium transition sm:px-4 ${
+                  className={`text-sm transition ${
                     isActive
-                      ? "bg-accent-light text-accent"
-                      : "text-ink-muted hover:bg-surface-subtle hover:text-ink"
+                      ? "font-medium text-accent"
+                      : "text-ink-muted hover:text-ink"
                   }`}
                 >
                   {link.label}
@@ -48,6 +51,13 @@ export default function Navbar() {
             );
           })}
         </ul>
+
+        <Link
+          href="/contact"
+          className="rounded-lg bg-charcoal px-5 py-2.5 text-sm font-medium text-surface transition hover:opacity-90"
+        >
+          Get a free review
+        </Link>
       </nav>
     </header>
   );

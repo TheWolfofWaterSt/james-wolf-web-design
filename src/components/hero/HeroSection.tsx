@@ -1,13 +1,10 @@
 import Link from "next/link";
-import HeroNav from "./HeroNav";
 import SplitComparison from "./SplitComparison";
 import TrustStrip from "./TrustStrip";
 
 export default function HeroSection() {
   return (
-    <section className="bg-surface-subtle pb-16 pt-0 md:pb-20">
-      <HeroNav />
-
+    <section className="bg-surface-subtle pb-16 md:pb-20">
       <div className="mx-auto w-full max-w-[1100px] px-5 pt-10 md:pt-14">
         <div
           className="animate-fade-up mx-auto mb-7 flex w-fit items-center gap-2 rounded-full border border-accent-ring bg-accent-light px-3.5 py-1.5"
@@ -37,21 +34,15 @@ export default function HeroSection() {
         </p>
 
         <div
-          className="animate-fade-up mb-16 flex flex-col items-center justify-center gap-4 md:flex-row"
+          className="animate-fade-up mb-16 flex justify-center"
           style={{ animationDelay: "300ms" }}
         >
           <Link
             href="/work"
-            className="w-full rounded-xl bg-accent px-7 py-3.5 text-center text-[15px] font-semibold text-surface transition-colors duration-150 hover:bg-accent-hover md:w-auto"
+            className="rounded-xl bg-accent px-7 py-3.5 text-[15px] font-semibold text-surface transition-colors duration-150 hover:bg-accent-hover"
           >
-            See my work — free site audit
+            See my work
           </Link>
-          <a
-            href="#comparison"
-            className="w-full rounded-xl border border-surface-border bg-transparent px-6 py-[13px] text-center text-[15px] font-medium text-ink transition-colors duration-150 hover:border-ink-secondary md:w-auto"
-          >
-            ↓ See the transformation
-          </a>
         </div>
       </div>
 

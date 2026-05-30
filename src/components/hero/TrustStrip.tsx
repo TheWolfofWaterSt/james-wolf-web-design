@@ -76,7 +76,7 @@ function StarIcon() {
 }
 
 const items = [
-  { icon: ClockIcon, label: "2–3 week turnaround" },
+  { icon: ClockIcon, label: "Fast turnaround" },
   { icon: SmartphoneIcon, label: "Mobile-first by default" },
   { icon: SearchIcon, label: "SEO-ready from day one" },
   { icon: StarIcon, label: "Local business specialists" },
