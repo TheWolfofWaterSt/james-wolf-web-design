@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Project } from "@/lib/projects";
+import ProjectThumbnail from "./ProjectThumbnail";
 
 type ProjectCardProps = {
   project: Project;
@@ -12,10 +13,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="card flex h-full flex-col">
-      <div
-        className={`mb-6 h-36 rounded-xl bg-gradient-to-br ${project.accent} border border-surface-border`}
-        aria-hidden
-      />
+      <ProjectThumbnail project={project} className="mb-6 h-36 rounded-xl" />
 
       <p className="label-kicker">{project.category}</p>
       <h3 className="mt-2 text-xl font-semibold text-ink">{project.title}</h3>

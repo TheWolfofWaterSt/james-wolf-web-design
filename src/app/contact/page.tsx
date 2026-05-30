@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
-import { site } from "@/lib/site";
+import { site, sitePhoneTel } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -34,6 +34,20 @@ export default function ContactPage() {
                 className="mt-4 inline-block text-base font-medium text-brand-700 underline-offset-4 hover:underline"
               >
                 {site.email}
+              </a>
+            </div>
+
+            <div className="card">
+              <h2 className="text-lg font-semibold text-ink">Call or text</h2>
+              <p className="mt-3 text-sm text-ink-muted">
+                Easier to talk it through? Reach me by phone during business
+                hours.
+              </p>
+              <a
+                href={`tel:${sitePhoneTel}`}
+                className="mt-4 inline-block text-base font-medium text-brand-700 underline-offset-4 hover:underline"
+              >
+                {site.phone}
               </a>
             </div>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { site, sitePhoneTel } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,6 +16,12 @@ export default function Footer() {
               className="mt-4 inline-block text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
             >
               {site.email}
+            </a>
+            <a
+              href={`tel:${sitePhoneTel}`}
+              className="mt-2 inline-block text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+            >
+              {site.phone}
             </a>
           </div>
 

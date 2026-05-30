@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import FictionalNotice from "@/components/FictionalNotice";
+import ProjectThumbnail from "@/components/ProjectThumbnail";
 import CTA from "@/components/CTA";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Fictional concept redesign case studies for local HVAC, restaurant, and plumbing businesses.",
+    "Concept redesign case studies for manufacturing, HVAC, and plumbing businesses.",
 };
 
 export default function WorkPage() {
@@ -17,7 +18,7 @@ export default function WorkPage() {
       <PageHeader
         kicker="Portfolio"
         title="Concept redesigns"
-        description="Three fictional projects showcasing design thinking for service-based local businesses. None of these are real clients—all names and content are placeholders."
+        description="Three redesign concepts for local businesses—one personal project built from real manufacturer content, plus fictional HVAC and plumbing placeholders."
       />
 
       <section className="section-padding !pt-8">
@@ -31,9 +32,9 @@ export default function WorkPage() {
                   href={`/work/${project.slug}`}
                   className="card group flex h-full flex-col"
                 >
-                  <div
-                    className={`mb-6 h-40 rounded-xl bg-gradient-to-br ${project.accent} border border-surface-border transition group-hover:opacity-90`}
-                    aria-hidden
+                  <ProjectThumbnail
+                    project={project}
+                    className="mb-6 h-40 rounded-xl transition group-hover:opacity-90"
                   />
                   <p className="label-kicker">{project.category}</p>
                   <h2 className="mt-2 text-xl font-semibold text-ink group-hover:text-brand-800">

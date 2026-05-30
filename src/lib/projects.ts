@@ -9,9 +9,41 @@ export type Project = {
   designDecisions: string[];
   outcome: string;
   accent: string;
+  heroImage?: string;
+  heroImageLarge?: string;
+  liveUrl?: string;
+  portfolioNote?: string;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "panel-systems-room-dividers",
+    title: "Panel Systems Room Dividers",
+    category: "Manufacturing Website (Personal Redesign)",
+    shortDescription:
+      "A modern rebuild concept for a Wisconsin room-divider manufacturer—product catalog, trust content, and a quote funnel built for institutional buyers.",
+    problem:
+      "The existing roomdividers.org site hadn’t been updated since 2011–2012. Solid product and testimonial content was trapped in a dated, sloppy layout—dense walls of text, inconsistent formatting, defunct Flash embeds, duplicate pages, and no meaningful mobile experience. Buyers comparing sliding, folding, and modular systems had no clear path from browsing to quote.",
+    solution:
+      "Restructured the site around a conversion-focused homepage and organized product hubs. The savings claim leads above the fold, category cards route visitors to the right system type, and quote plus click-to-call CTAs stay visible on every page—presenting real business content in a clean, fast, mobile-first layout.",
+    overview:
+      "Panel Systems Manufacturing is a Wisconsin-based direct manufacturer of floor-supported commercial room dividers, serving churches, schools, offices, and factories nationwide for 30+ years. This is a personal portfolio project—a concept redesign using publicly available content from the existing site, not an official client engagement. The goal was to preserve factual product information while delivering the modern, credible web presence the business deserves.",
+    designDecisions: [
+      "Hero anchored on the verifiable 50–75% factory-direct savings claim with three trust signals beneath",
+      "Product navigation grouped into four category hubs—sliding, folding, modular, and clean room—with model comparison tables",
+      "Section-based homepage funnel: savings story, industries served, testimonials, three-step process, and FAQ objection handling",
+      "Sticky header with click-to-call and “Get a Quote” for institutional buyers who prefer the phone",
+      "Navy-and-amber palette with geometric sans-serif typography—institutional trust with high-contrast conversion CTAs",
+    ],
+    outcome:
+      "The redesign turns a cluttered legacy catalog into a scannable, mobile-ready site where visitors can identify their product type, understand why floor-supported systems cost less, and reach a quote form or phone number from any page—without fighting outdated formatting.",
+    accent: "from-slate-600/20 to-blue-900/15",
+    heroImage: "/panel-systems-hero-small.jpg",
+    heroImageLarge: "/panel-systems-hero-large.jpg",
+    liveUrl: "https://mueller-room-dividers.vercel.app/",
+    portfolioNote:
+      "Personal portfolio project: a concept redesign based on publicly available content from Panel Systems Manufacturing (roomdividers.org). Not an official client engagement.",
+  },
   {
     slug: "summit-hvac",
     title: "Summit HVAC",
@@ -34,29 +66,6 @@ export const projects: Project[] = [
     outcome:
       "The layout reads as a credible local trades site within seconds—visitors understand offerings, coverage area, and how to book without hunting through pages.",
     accent: "from-amber-500/20 to-orange-600/10",
-  },
-  {
-    slug: "harbor-kitchen",
-    title: "Harbor Kitchen",
-    category: "Local Restaurant Website (Concept Redesign)",
-    shortDescription:
-      "A fictional concept for a neighborhood restaurant—menu discovery, reservations, and atmosphere without visual clutter.",
-    problem:
-      "Many restaurant sites rely on PDF menus, slow image carousels, and buried hours—frustrating guests on mobile before they ever visit.",
-    solution:
-      "Scannable menu categories, hours and location upfront, and a reservation CTA that stays visible while browsing the menu.",
-    overview:
-      "Harbor Kitchen is a demo restaurant brand showcasing how a single-location eatery can convert browsing into reservations. Photography placeholders and copy are entirely fictional.",
-    designDecisions: [
-      "Full-bleed hero with hours, address, and reserve button overlay",
-      "Menu organized by category with dietary tags as visual chips",
-      "Gallery grid with consistent aspect ratios for food photography",
-      "Subtle serif accent for headings to evoke hospitality",
-      "Footer with map embed placeholder and social links",
-    ],
-    outcome:
-      "Guests can answer “What’s on the menu?” and “Can I book tonight?” in under a minute on any device—reducing friction before the first visit.",
-    accent: "from-rose-500/15 to-stone-600/10",
   },
   {
     slug: "blue-ridge-plumbing",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import FictionalNotice from "@/components/FictionalNotice";
+import ProjectThumbnail from "@/components/ProjectThumbnail";
 import CTA from "@/components/CTA";
 import { projects, getProjectBySlug } from "@/lib/projects";
 
@@ -41,15 +42,31 @@ export default async function ProjectPage({ params }: Props) {
             ← Back to work
           </Link>
 
-          <FictionalNotice className="mt-8" />
+          <FictionalNotice
+            className="mt-8"
+            message={project.portfolioNote}
+          />
 
           <p className="label-kicker mt-10">{project.category}</p>
           <h1 className="heading-display mt-3">{project.title}</h1>
           <p className="text-body mt-6 max-w-2xl">{project.shortDescription}</p>
 
-          <div
-            className={`mt-10 h-48 rounded-2xl bg-gradient-to-br sm:h-64 ${project.accent} border border-surface-border`}
-            aria-hidden
+          {project.liveUrl ? (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+            >
+              View live demo →
+            </a>
+          ) : null}
+
+          <ProjectThumbnail
+            project={project}
+            className="mt-10 h-48 rounded-2xl sm:h-64"
+            priority
+            size="large"
           />
         </div>
       </header>
