@@ -11,8 +11,8 @@ type CTAProps = {
 };
 
 export default function CTA({
-  headline = "Have an outdated website? Let’s fix it.",
-  subtext = "Tell me about your business and goals—I’ll reply with clear next steps.",
+  headline = "Need a new website—or a better one?",
+  subtext = "Tell me about your business and your goals, and I'll reply with clear next steps.",
   primaryLabel = "Contact Me",
   primaryHref = "/contact",
   secondaryLabel,

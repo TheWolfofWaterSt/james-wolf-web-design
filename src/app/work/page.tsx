@@ -55,7 +55,7 @@ export default function WorkPage() {
 
       <CTA
         headline="Want something similar for your business?"
-        subtext="I build custom sites for local service businesses—not template reskins."
+        subtext="Whether you need a brand new site or a refresh, I'll work with you to create a website that meets your needs."
         secondaryLabel="About me"
         secondaryHref="/about"
       />

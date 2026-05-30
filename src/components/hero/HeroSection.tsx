@@ -19,7 +19,7 @@ export default function HeroSection() {
           className="animate-fade-up mx-auto mb-9 mt-6 max-w-[500px] text-center text-lg font-normal leading-relaxed text-ink-muted"
           style={{ animationDelay: "100ms" }}
         >
-          I rebuild outdated local business websites into modern, professional
+          I build and rebuild local business websites into modern, professional
           tools that actually bring in customers.
         </p>
 
