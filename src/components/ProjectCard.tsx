@@ -17,7 +17,7 @@ export default function ProjectCard({
 
       <p className="label-kicker">{project.category}</p>
       <h3 className="mt-2 text-xl font-semibold text-ink">{project.title}</h3>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-muted">
+      <p className="mt-3 text-sm leading-relaxed text-ink-muted">
         {project.shortDescription}
       </p>
 
@@ -34,9 +34,7 @@ export default function ProjectCard({
 
       <Link
         href={`/work/${project.slug}`}
-        className={`mt-6 inline-flex text-sm font-medium text-brand-700 underline-offset-4 hover:underline ${
-          featured ? "" : ""
-        }`}
+        className="mt-auto pt-6 inline-flex text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
       >
         View case study →
       </Link>
