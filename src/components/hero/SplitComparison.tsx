@@ -1,32 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-
-function BeforeBrowserChrome() {
-  return (
-    <div className="flex h-9 shrink-0 flex-row items-center gap-2 bg-[#e8e8e3] px-4">
-      <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" aria-hidden />
-      <span className="h-2.5 w-2.5 rounded-full bg-[#FEBC2E]" aria-hidden />
-      <span className="h-2.5 w-2.5 rounded-full bg-[#28C840]" aria-hidden />
-      <div className="mx-3 flex h-5 flex-1 items-center rounded bg-[#d8d8d3] px-2.5 text-[11px] text-ink-muted">
-        panelsystems.com/
-      </div>
-    </div>
-  );
-}
-
-function AfterBrowserChrome() {
-  return (
-    <div className="flex h-9 shrink-0 flex-row items-center gap-2 bg-charcoal px-4">
-      <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" aria-hidden />
-      <span className="h-2.5 w-2.5 rounded-full bg-[#FEBC2E]" aria-hidden />
-      <span className="h-2.5 w-2.5 rounded-full bg-[#28C840]" aria-hidden />
-      <div className="mx-3 flex h-5 flex-1 items-center rounded bg-ink-secondary px-2.5 text-[11px] text-ink-faint">
-        panelsystems.com/
-      </div>
-    </div>
-  );
-}
+import { BrowserChrome } from "@/components/BrowserFrame";
 
 const PENDULUM_MIN = 20;
 const PENDULUM_MAX = 80;
@@ -163,7 +138,7 @@ export default function SplitComparison() {
         style={{ width: "50%" }}
       >
         <div className="flex h-full flex-col bg-surface">
-          <BeforeBrowserChrome />
+          <BrowserChrome variant="before" domain="panelsystems.com/" />
           <div className="relative min-h-0 flex-1 overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -189,7 +164,7 @@ export default function SplitComparison() {
         style={{ left: "50%", width: "50%" }}
       >
         <div className="flex h-full flex-col">
-          <AfterBrowserChrome />
+          <BrowserChrome variant="after" domain="panelsystems.com/" />
           <div className="relative min-h-0 flex-1 overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

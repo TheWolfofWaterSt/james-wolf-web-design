@@ -11,6 +11,9 @@ export type Project = {
   accent: string;
   heroImage?: string;
   heroImageLarge?: string;
+  previewImage?: string;
+  previewDomain?: string;
+  previewConcept?: "hvac" | "plumbing";
   liveUrl?: string;
   portfolioNote?: string;
 };
@@ -40,6 +43,8 @@ export const projects: Project[] = [
     accent: "from-slate-600/20 to-blue-900/15",
     heroImage: "/panel-systems-hero-small.jpg",
     heroImageLarge: "/panel-systems-hero-large.jpg",
+    previewImage: "/images/NewPanelSystemsSite.png",
+    previewDomain: "roomdividers.org",
     liveUrl: "https://mueller-room-dividers.vercel.app/",
     portfolioNote:
       "Personal portfolio project: a concept redesign based on publicly available content from Panel Systems Manufacturing (roomdividers.org). Not an official client engagement.",
@@ -66,6 +71,8 @@ export const projects: Project[] = [
     outcome:
       "The layout reads as a credible local trades site within seconds—visitors understand offerings, coverage area, and how to book without hunting through pages.",
     accent: "from-amber-500/20 to-orange-600/10",
+    previewDomain: "summithvac.com",
+    previewConcept: "hvac",
   },
   {
     slug: "blue-ridge-plumbing",
@@ -89,6 +96,8 @@ export const projects: Project[] = [
     outcome:
       "The concept communicates urgency for leaks, clarity for planned work, and a trustworthy path to request a quote—without overwhelming non-technical visitors.",
     accent: "from-sky-500/20 to-slate-600/10",
+    previewDomain: "blueridgeplumbing.com",
+    previewConcept: "plumbing",
   },
 ];
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import FictionalNotice from "@/components/FictionalNotice";
-import ProjectThumbnail from "@/components/ProjectThumbnail";
+import ProjectBrowserPreview from "@/components/ProjectBrowserPreview";
 import CTA from "@/components/CTA";
 import { projects } from "@/lib/projects";
 
@@ -32,9 +32,9 @@ export default function WorkPage() {
                   href={`/work/${project.slug}`}
                   className="card group flex h-full flex-col"
                 >
-                  <ProjectThumbnail
+                  <ProjectBrowserPreview
                     project={project}
-                    className="mb-6 h-40 rounded-xl transition group-hover:opacity-90"
+                    className="mb-6 transition group-hover:opacity-95"
                   />
                   <p className="label-kicker">{project.category}</p>
                   <h2 className="mt-2 text-xl font-semibold text-ink transition group-hover:text-accent">

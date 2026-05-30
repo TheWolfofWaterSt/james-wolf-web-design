@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import FictionalNotice from "@/components/FictionalNotice";
-import ProjectThumbnail from "@/components/ProjectThumbnail";
+import ProjectBrowserPreview from "@/components/ProjectBrowserPreview";
 import CTA from "@/components/CTA";
 import { projects, getProjectBySlug } from "@/lib/projects";
 
@@ -62,11 +62,11 @@ export default async function ProjectPage({ params }: Props) {
             </a>
           ) : null}
 
-          <ProjectThumbnail
+          <ProjectBrowserPreview
             project={project}
-            className="mt-10 h-48 rounded-2xl sm:h-64"
+            className="mt-10"
+            aspectClass="aspect-[16/9] sm:aspect-[2/1]"
             priority
-            size="large"
           />
         </div>
       </header>
