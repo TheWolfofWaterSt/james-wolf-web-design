@@ -34,8 +34,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="flex min-h-screen flex-col font-sans">
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
+    >
+      <body
+        className="flex min-h-screen flex-col font-sans"
+        suppressHydrationWarning
+      >
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <Footer />
