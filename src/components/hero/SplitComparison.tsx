@@ -142,7 +142,7 @@ export default function SplitComparison() {
           <div className="relative min-h-0 flex-1 overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/OldPanelSystemsSite.png"
+              src="/images/OldPanelSystemsSite.png"
               alt="Panel Systems original website"
               className="h-full w-full object-cover object-top"
             />

@@ -41,8 +41,8 @@ export const projects: Project[] = [
     outcome:
       "The redesign turns a cluttered legacy catalog into a scannable, mobile-ready site where visitors can identify their product type, understand why floor-supported systems cost less, and reach a quote form or phone number from any page—without fighting outdated formatting.",
     accent: "from-slate-600/20 to-blue-900/15",
-    heroImage: "/panel-systems-hero-small.jpg",
-    heroImageLarge: "/panel-systems-hero-large.jpg",
+    heroImage: "/images/panel-systems-hero-small.jpg",
+    heroImageLarge: "/images/panel-systems-hero-large.jpg",
     previewImage: "/images/NewPanelSystemsSite.png",
     previewDomain: "roomdividers.org",
     liveUrl: "https://mueller-room-dividers.vercel.app/",

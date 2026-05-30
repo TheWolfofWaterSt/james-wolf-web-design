@@ -38,19 +38,28 @@ function StepConnector() {
   );
 }
 
-export default function Process() {
+type ProcessProps = {
+  introDescription?: string;
+  className?: string;
+};
+
+export default function Process({
+  introDescription = "Whether you're replacing an outdated site or starting from zero, you'll know what's happening at every step.",
+  className = "",
+}: ProcessProps) {
   return (
-    <section id="process" className="section-padding" aria-labelledby="process-heading">
+    <section
+      id="process"
+      className={`section-padding ${className}`.trim()}
+      aria-labelledby="process-heading"
+    >
       <div className="container-content">
         <div className="max-w-2xl">
           <p className="label-kicker">How it works</p>
           <h2 id="process-heading" className="heading-section mt-3">
             From first conversation to live site
           </h2>
-          <p className="text-body mt-4">
-            Whether you&apos;re replacing an outdated site or starting from zero,
-            you&apos;ll know what&apos;s happening at every step.
-          </p>
+          <p className="text-body mt-4">{introDescription}</p>
         </div>
 
         <ol className="mt-14 flex list-none flex-col lg:mt-16 lg:flex-row lg:items-stretch">
