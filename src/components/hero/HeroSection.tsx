@@ -6,19 +6,9 @@ export default function HeroSection() {
   return (
     <section className="bg-surface-subtle pb-16 md:pb-20">
       <div className="mx-auto w-full max-w-[1100px] px-5 pt-10 md:pt-14">
-        <div
-          className="animate-fade-up mx-auto mb-7 flex w-fit items-center gap-2 rounded-full border border-accent-ring bg-accent-light px-3.5 py-1.5"
-          style={{ animationDelay: "0ms" }}
-        >
-          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
-          <span className="text-xs font-medium uppercase tracking-wide text-accent">
-            Web design for local businesses
-          </span>
-        </div>
-
         <h1
           className="animate-fade-up mx-auto max-w-[720px] text-center font-display text-[32px] font-bold leading-[1.08] tracking-[-0.04em] text-ink md:text-[clamp(36px,5vw,60px)] md:tracking-[-0.05em]"
-          style={{ animationDelay: "100ms" }}
+          style={{ animationDelay: "0ms" }}
         >
           Your website should work
           <br />
@@ -27,7 +17,7 @@ export default function HeroSection() {
 
         <p
           className="animate-fade-up mx-auto mb-9 mt-6 max-w-[500px] text-center text-lg font-normal leading-relaxed text-ink-muted"
-          style={{ animationDelay: "200ms" }}
+          style={{ animationDelay: "100ms" }}
         >
           I rebuild outdated local business websites into modern, professional
           tools that actually bring in customers.
@@ -35,7 +25,7 @@ export default function HeroSection() {
 
         <div
           className="animate-fade-up mb-16 flex justify-center"
-          style={{ animationDelay: "300ms" }}
+          style={{ animationDelay: "200ms" }}
         >
           <Link
             href="/work"

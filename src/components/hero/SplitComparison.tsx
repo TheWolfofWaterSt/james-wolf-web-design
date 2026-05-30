@@ -152,7 +152,7 @@ export default function SplitComparison() {
     <div
       id="comparison"
       ref={containerRef}
-      className="animate-fade-up relative mx-auto h-[380px] w-full max-w-[1040px] cursor-col-resize select-none overflow-hidden rounded-xl border border-surface-border shadow-card md:h-[520px] md:rounded-2xl"
+      className="animate-fade-up relative mx-auto h-[380px] w-full max-w-[1040px] cursor-col-resize select-none overflow-hidden rounded-xl border border-surface-border shadow-glow-card md:h-[520px] md:rounded-2xl"
       style={{ animationDelay: "500ms" }}
       aria-label="Before and after website comparison. Drag to compare."
     >

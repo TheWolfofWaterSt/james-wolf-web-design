@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface-border bg-surface shadow-soft">
+    <header className="sticky top-0 z-50 border-b border-surface-border bg-surface shadow-glow-soft">
       <nav
         className="mx-auto flex w-full max-w-[1100px] items-center justify-between gap-6 px-5 py-4"
         aria-label="Main navigation"

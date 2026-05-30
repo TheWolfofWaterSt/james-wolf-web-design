@@ -59,7 +59,7 @@ export default function ContactForm() {
           type="text"
           required
           autoComplete="name"
-          className="mt-2 w-full rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-sm transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
+          className="mt-2 w-full rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-glow-soft transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
           placeholder="Your name"
         />
       </div>
@@ -74,7 +74,7 @@ export default function ContactForm() {
           type="email"
           required
           autoComplete="email"
-          className="mt-2 w-full rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-sm transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
+          className="mt-2 w-full rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-glow-soft transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
           placeholder="you@example.com"
         />
       </div>
@@ -88,7 +88,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="mt-2 w-full resize-y rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-sm transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
+          className="mt-2 w-full resize-y rounded-lg border border-surface-border bg-surface px-4 py-3 text-ink shadow-glow-soft transition focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-ring"
           placeholder="Tell me about your business and what you need from your website."
         />
       </div>

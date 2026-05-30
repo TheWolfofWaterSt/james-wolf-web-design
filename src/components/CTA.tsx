@@ -30,7 +30,7 @@ export default function CTA({
     >
       <div className="container-content">
         <div
-          className={`rounded-2xl border border-surface-border bg-surface p-8 shadow-card sm:p-12 ${
+          className={`rounded-2xl border border-surface-border bg-surface p-8 shadow-glow-card sm:p-12 ${
             variant === "default" ? "text-center" : ""
           }`}
         >

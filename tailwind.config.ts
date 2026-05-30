@@ -36,6 +36,10 @@ const config: Config = {
         soft: "0 1px 3px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.04)",
         card: "0 2px 8px rgba(17, 24, 39, 0.05), 0 12px 32px rgba(17, 24, 39, 0.06)",
         glow: "0 0 80px rgba(99, 102, 241, 0.12)",
+        "glow-soft":
+          "0 1px 3px rgba(99, 102, 241, 0.06), 0 4px 16px rgba(99, 102, 241, 0.08)",
+        "glow-card":
+          "0 2px 8px rgba(99, 102, 241, 0.08), 0 12px 32px rgba(99, 102, 241, 0.12)",
       },
       maxWidth: {
         content: "72rem",
