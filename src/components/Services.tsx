@@ -23,7 +23,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section-padding" aria-labelledby="services-heading">
+    <section id="process" className="section-padding" aria-labelledby="services-heading">
       <div className="container-content">
         <div className="max-w-2xl">
           <p className="label-kicker">Services</p>
