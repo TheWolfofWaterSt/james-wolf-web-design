@@ -24,7 +24,7 @@ const trustPoints = [
 export default function Trust() {
   return (
     <section
-      className="section-padding border-y border-surface-border bg-surface"
+      className="section-dark section-padding"
       aria-labelledby="trust-heading"
     >
       <div className="container-content">
@@ -38,11 +38,11 @@ export default function Trust() {
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {trustPoints.map((point) => (
             <li key={point.title} className="text-center sm:text-left">
-              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-surface-border bg-brand-50 sm:mx-0">
-                <span className="h-2 w-2 rounded-full bg-brand-600" aria-hidden />
+              <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 sm:mx-0">
+                <span className="h-2 w-2 rounded-full bg-accent" aria-hidden />
               </div>
-              <h3 className="font-semibold text-ink">{point.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+              <h3 className="font-semibold text-white">{point.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/70">
                 {point.description}
               </p>
             </li>

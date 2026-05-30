@@ -13,13 +13,13 @@ export default function Footer() {
             <p className="mt-2 text-sm text-ink-muted">{site.tagline}</p>
             <a
               href={`mailto:${site.email}`}
-              className="mt-4 inline-block text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+              className="link-accent mt-4 inline-block text-sm"
             >
               {site.email}
             </a>
             <a
               href={`tel:${sitePhoneTel}`}
-              className="mt-2 inline-block text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+              className="link-accent mt-2 inline-block text-sm"
             >
               {site.phone}
             </a>
@@ -29,13 +29,13 @@ export default function Footer() {
             className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-muted"
             aria-label="Footer navigation"
           >
-            <Link href="/work" className="hover:text-ink">
+            <Link href="/work" className="transition hover:text-ink">
               Work
             </Link>
-            <Link href="/about" className="hover:text-ink">
+            <Link href="/about" className="transition hover:text-ink">
               About
             </Link>
-            <Link href="/contact" className="hover:text-ink">
+            <Link href="/contact" className="transition hover:text-ink">
               Contact
             </Link>
           </nav>

@@ -22,7 +22,7 @@
   }
 
   .heading-display {
-    @apply font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl lg:text-5xl;
+    @apply font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl lg:text-5xl;
   }
 
   .heading-section {
@@ -34,11 +34,11 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg bg-ink px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
+    @apply inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-accent-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-lg border border-surface-border bg-surface px-6 py-3 text-sm font-medium text-ink shadow-soft transition hover:border-brand-300 hover:bg-brand-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
+    @apply inline-flex items-center justify-center rounded-lg border border-surface-border bg-surface px-6 py-3 text-sm font-medium text-ink shadow-soft transition hover:border-ink-secondary/20 hover:bg-surface-subtle focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink;
   }
 
   .card {
@@ -47,5 +47,25 @@
 
   .label-kicker {
     @apply text-xs font-semibold uppercase tracking-widest text-ink-faint;
+  }
+
+  .link-accent {
+    @apply font-medium text-accent underline-offset-4 transition hover:text-accent-hover hover:underline;
+  }
+
+  .section-dark {
+    @apply bg-charcoal text-white;
+  }
+
+  .section-dark .label-kicker {
+    @apply text-white/50;
+  }
+
+  .section-dark .heading-section {
+    @apply text-white;
+  }
+
+  .section-dark .text-body {
+    @apply text-white/70;
   }
 }

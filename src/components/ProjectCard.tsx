@@ -30,7 +30,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <Link
         href={`/work/${project.slug}`}
-        className="mt-auto pt-6 inline-flex text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+        className="link-accent mt-auto inline-flex pt-6 text-sm"
       >
         View case study →
       </Link>

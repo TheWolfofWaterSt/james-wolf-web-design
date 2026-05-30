@@ -33,11 +33,11 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <>
-      <header className="section-padding border-b border-surface-border bg-surface">
+      <header className="section-padding border-b border-surface-border bg-surface-subtle">
         <div className="container-content">
           <Link
             href="/work"
-            className="text-sm font-medium text-ink-muted hover:text-ink"
+            className="text-sm font-medium text-ink-muted transition hover:text-accent"
           >
             ← Back to work
           </Link>
@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: Props) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-brand-700 underline-offset-4 hover:underline"
+              className="link-accent mt-6 inline-flex items-center gap-2 text-sm"
             >
               View live demo →
             </a>
@@ -99,7 +99,7 @@ export default async function ProjectPage({ params }: Props) {
                   className="flex gap-4 rounded-xl border border-surface-border bg-surface px-5 py-4 text-sm text-ink-muted sm:text-base"
                 >
                   <span
-                    className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600"
+                    className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
                     aria-hidden
                   />
                   {decision}

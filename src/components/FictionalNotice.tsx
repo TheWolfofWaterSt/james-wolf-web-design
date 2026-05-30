@@ -10,10 +10,10 @@ export default function FictionalNotice({
 }) {
   return (
     <aside
-      className={`rounded-lg border border-amber-200/80 bg-amber-50/80 px-4 py-3 text-sm text-amber-950 ${className}`}
+      className={`rounded-lg border border-surface-border border-l-4 border-l-accent bg-surface px-4 py-3 text-sm text-ink-muted ${className}`}
       role="note"
     >
-      <strong className="font-medium">Portfolio note:</strong> {message}
+      <strong className="font-medium text-ink">Portfolio note:</strong> {message}
     </aside>
   );
 }

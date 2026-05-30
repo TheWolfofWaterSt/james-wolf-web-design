@@ -14,14 +14,14 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-surface-border/80 bg-surface-subtle/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-surface-border/80 bg-surface/90 backdrop-blur-md">
       <nav
         className="container-content flex items-center justify-between gap-6 px-5 py-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-ink transition hover:text-brand-700 sm:text-base"
+          className="text-sm font-semibold tracking-tight text-ink transition hover:text-accent sm:text-base"
         >
           {site.name}
         </Link>
@@ -38,8 +38,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`rounded-md px-3 py-2 text-sm font-medium transition sm:px-4 ${
                     isActive
-                      ? "bg-brand-100 text-ink"
-                      : "text-ink-muted hover:bg-brand-50 hover:text-ink"
+                      ? "bg-accent-light text-accent"
+                      : "text-ink-muted hover:bg-surface-subtle hover:text-ink"
                   }`}
                 >
                   {link.label}

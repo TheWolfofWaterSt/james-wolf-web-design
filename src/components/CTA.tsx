@@ -24,7 +24,7 @@ export default function CTA({
       className={
         variant === "compact"
           ? "py-8"
-          : "section-padding border-t border-surface-border bg-brand-50/50"
+          : "section-padding border-t border-surface-border bg-surface-subtle"
       }
       aria-labelledby="cta-heading"
     >

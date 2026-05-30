@@ -37,13 +37,13 @@ export default function WorkPage() {
                     className="mb-6 h-40 rounded-xl transition group-hover:opacity-90"
                   />
                   <p className="label-kicker">{project.category}</p>
-                  <h2 className="mt-2 text-xl font-semibold text-ink group-hover:text-brand-800">
+                  <h2 className="mt-2 text-xl font-semibold text-ink transition group-hover:text-accent">
                     {project.title}
                   </h2>
                   <p className="mt-3 flex-1 text-sm text-ink-muted">
                     {project.shortDescription}
                   </p>
-                  <span className="mt-6 text-sm font-medium text-brand-700">
+                  <span className="link-accent mt-6 text-sm">
                     Read case study →
                   </span>
                 </Link>

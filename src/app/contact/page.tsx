@@ -31,7 +31,7 @@ export default function ContactPage() {
               </p>
               <a
                 href={`mailto:${site.email}`}
-                className="mt-4 inline-block text-base font-medium text-brand-700 underline-offset-4 hover:underline"
+                className="link-accent mt-4 inline-block text-base"
               >
                 {site.email}
               </a>
@@ -45,7 +45,7 @@ export default function ContactPage() {
               </p>
               <a
                 href={`tel:${sitePhoneTel}`}
-                className="mt-4 inline-block text-base font-medium text-brand-700 underline-offset-4 hover:underline"
+                className="link-accent mt-4 inline-block text-base"
               >
                 {site.phone}
               </a>
