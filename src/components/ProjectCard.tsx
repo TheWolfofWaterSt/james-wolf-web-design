@@ -4,13 +4,9 @@ import ProjectThumbnail from "./ProjectThumbnail";
 
 type ProjectCardProps = {
   project: Project;
-  featured?: boolean;
 };
 
-export default function ProjectCard({
-  project,
-  featured = false,
-}: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="card flex h-full flex-col">
       <ProjectThumbnail project={project} className="mb-6 h-36 rounded-xl" />
