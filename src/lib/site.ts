@@ -1,5 +1,8 @@
 export const site = {
   name: "James Wolf Web Design",
+  brandName: "James Wolf",
+  brandSuffix: "Web Design",
+  monogram: "JW",
   tagline: "Modern websites for local businesses",
   email: "jameswolfwebdesign@gmail.com",
   phone: "715-894-7799",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import { site, sitePhoneTel } from "@/lib/site";
 
 const footerLinks = [
@@ -15,7 +16,13 @@ export default function Footer() {
       <div className="container-content section-padding !py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           <div>
-            <p className="text-base font-semibold text-ink">{site.name}</p>
+            <Link
+              href="/"
+              className="inline-block transition hover:opacity-90"
+              aria-label={site.name}
+            >
+              <Logo />
+            </Link>
             <p className="mt-2 max-w-xs text-sm leading-relaxed text-ink-muted">
               {site.tagline}
             </p>

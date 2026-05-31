@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/components/Logo";
+import { site } from "@/lib/site";
 
 const navLinks = [
   { href: "/work", label: "Work" },
@@ -20,10 +22,10 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="font-display text-sm font-semibold text-ink transition hover:text-accent sm:text-base"
+          className="transition hover:opacity-90"
+          aria-label={site.name}
         >
-          James Wolf{" "}
-          <span className="text-accent">Web Design</span>
+          <Logo />
         </Link>
 
         <ul className="hidden items-center gap-8 md:flex">
