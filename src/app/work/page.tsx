@@ -9,7 +9,7 @@ import { projects } from "@/lib/projects";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Concept redesign case studies for manufacturing, HVAC, and plumbing businesses.",
+    "Case studies for manufacturing, basketball training, and plumbing websites.",
 };
 
 export default function WorkPage() {
@@ -18,7 +18,7 @@ export default function WorkPage() {
       <PageHeader
         kicker="Portfolio"
         title="Concept redesigns"
-        description="Three redesign concepts for local businesses—one personal project built from real manufacturer content, plus fictional HVAC and plumbing placeholders."
+        description="Three portfolio projects—one personal manufacturer redesign, a basketball training site built for fun, and a fictional plumbing concept."
       />
 
       <section className="section-padding !pt-8">

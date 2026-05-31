@@ -42,10 +42,12 @@ export default async function ProjectPage({ params }: Props) {
             ← Back to work
           </Link>
 
-          <FictionalNotice
-            className="mt-8"
-            message={project.portfolioNote}
-          />
+          {project.portfolioNote ? (
+            <FictionalNotice
+              className="mt-8"
+              message={project.portfolioNote}
+            />
+          ) : null}
 
           <p className="label-kicker mt-10">{project.category}</p>
           <h1 className="heading-display mt-3">{project.title}</h1>
@@ -67,6 +69,7 @@ export default async function ProjectPage({ params }: Props) {
             className="mt-10"
             aspectClass="aspect-[16/9] sm:aspect-[2/1]"
             priority
+            variant="hero"
           />
         </div>
       </header>

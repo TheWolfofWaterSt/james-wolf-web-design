@@ -8,13 +8,21 @@ type ProjectBrowserPreviewProps = {
   className?: string;
   priority?: boolean;
   aspectClass?: string;
+  /** "hero" = full content column (case study); "card" = grid thumbnails (default) */
+  variant?: "card" | "hero";
 };
+
+const PREVIEW_SIZES = {
+  card: "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw",
+  hero: "(max-width: 1152px) 100vw, 1152px",
+} as const;
 
 export default function ProjectBrowserPreview({
   project,
   className = "",
   priority = false,
   aspectClass = "aspect-[16/10]",
+  variant = "card",
 }: ProjectBrowserPreviewProps) {
   const domain = project.previewDomain ?? `${project.slug}.com/`;
   const normalizedDomain = domain.endsWith("/") ? domain : `${domain}/`;
@@ -28,7 +36,7 @@ export default function ProjectBrowserPreview({
             alt={`${project.title} redesign preview`}
             fill
             className="object-cover object-top"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            sizes={PREVIEW_SIZES[variant]}
             priority={priority}
           />
         ) : project.previewConcept ? (

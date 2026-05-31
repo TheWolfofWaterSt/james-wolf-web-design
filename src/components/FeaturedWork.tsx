@@ -13,9 +13,9 @@ export default function FeaturedWork() {
               Concept redesigns for local industries
             </h2>
             <p className="text-body mt-4">
-              Case studies for manufacturing, HVAC, and plumbing—one personal
-              redesign built from real business content, plus fictional concepts
-              for portfolio demonstration.
+              Case studies for manufacturing, basketball training, and
+              plumbing—two personal portfolio projects and a fictional concept
+              for demonstration.
             </p>
           </div>
           <Link

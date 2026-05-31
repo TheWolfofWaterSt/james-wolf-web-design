@@ -50,29 +50,31 @@ export const projects: Project[] = [
       "Personal portfolio project: a concept redesign based on publicly available content from Panel Systems Manufacturing (roomdividers.org). Not an official client engagement.",
   },
   {
-    slug: "summit-hvac",
-    title: "Summit HVAC",
-    category: "HVAC Company Website (Concept Redesign)",
+    slug: "prosser-basketball",
+    title: "Prosser Basketball",
+    category: "Basketball Training Website (Portfolio Project)",
     shortDescription:
-      "A fictional concept redesign for a local HVAC company—clear service paths, trust signals, and emergency CTAs.",
+      "A four-page site for an Eau Claire skills trainer—credibility signals, dual-audience copy, and a contact funnel built for cold outreach.",
     problem:
-      "Generic template sites bury emergency repair and seasonal maintenance behind cluttered menus, leaving homeowners unsure who to call.",
+      "Despite a compelling coaching philosophy, real community credentials, and 40+ athletes already trained, Prosser Basketball had no dedicated website. Rayce relied entirely on cold email outreach—leaving nowhere for prospects to verify his legitimacy, understand his program, or take the next step.",
     solution:
-      "A focused homepage with prominent seasonal offers, service area clarity, and above-the-fold emergency contact for urgent repairs.",
+      "A lean four-page site—Home, About, Services, and Contact—designed to convert cold traffic into email inquiries. It works as both a discovery tool and a credibility landing page for outbound outreach, funneling parents and players toward contact via form or email. Placeholder zones for photography, testimonials, and social media were built in from the start so the site can grow without a redesign.",
     overview:
-      "Summit HVAC is a placeholder brand created to demonstrate how a regional heating and cooling company could present services online. The concept prioritizes seasonal messaging, transparent pricing cues, and fast paths to schedule service.",
+      "Prosser Basketball LLC runs Playmakers Academy, offering individual and small group basketball skills training for youth and teen athletes in Eau Claire, Wisconsin. Founder Rayce Prosser develops both the physical and mental sides of the game—teaching when and why to use skills, not just how. He also serves as assistant varsity coach at Eau Claire Memorial High School and 14U head coach with Wisconsin Playmakers.",
     designDecisions: [
-      "Hero with dual CTAs: schedule maintenance vs. emergency repair",
-      "Service cards grouped by residential vs. commercial needs",
-      "Trust strip with certifications, years in business, and review placeholders",
-      "Warm neutral palette suggesting reliability and comfort",
-      "Sticky mobile call bar for on-the-go homeowners",
+      "Dark charcoal backgrounds with electric orange accents and condensed athletic typography—premium and credible from the first scroll",
+      "Dual-focus coaching philosophy on the homepage: physical and mental development, competitive stamina, and attention to detail",
+      "Trust built through authority signals—Memorial and Wisconsin Playmakers coaching roles, 40+ athletes trained—with testimonial components ready to populate",
+      "Copy and layout speak to both parents and teen players without separate pages; persistent Get in Touch CTA in navigation",
     ],
     outcome:
-      "The layout reads as a credible local trades site within seconds—visitors understand offerings, coverage area, and how to book without hunting through pages.",
-    accent: "from-amber-500/20 to-orange-600/10",
-    previewDomain: "summithvac.com",
-    previewConcept: "hvac",
+      "The site gives Rayce a professional online home that validates cold outreach, builds passive trust for local search, and gives curious parents and players a clear path to inquire—without relying on a single email to make the case.",
+    accent: "from-orange-500/20 to-neutral-900/15",
+    previewImage: "/images/ProsserBasketballSite.png",
+    previewDomain: "prosser-basketball.vercel.app",
+    liveUrl: "https://prosser-basketball.vercel.app/",
+    portfolioNote:
+      "Personal portfolio project: a site built to demonstrate web design for a local basketball skills training business. Not an official client engagement.",
   },
   {
     slug: "blue-ridge-plumbing",
