@@ -19,6 +19,8 @@ export type Project = {
   portfolioNote?: string;
   technicalHighlights?: string[];
   stack?: string;
+  /** When false, project appears on /work only—not the home page featured grid */
+  featured?: boolean;
 };
 
 export const projects: Project[] = [
@@ -51,6 +53,33 @@ export const projects: Project[] = [
     liveUrl: "https://mueller-room-dividers.vercel.app/",
     portfolioNote:
       "Personal portfolio project: a concept redesign based on publicly available content from Panel Systems Manufacturing (roomdividers.org). Not an official client engagement.",
+  },
+  {
+    slug: "prosser-basketball",
+    title: "Prosser Basketball",
+    category: "Basketball Training Website",
+    shortDescription:
+      "A four-page site for an Eau Claire skills trainer: credibility signals, dual-audience copy, and a contact funnel built for cold outreach.",
+    problem:
+      "Despite a compelling coaching philosophy, real community credentials, and 40+ athletes already trained, Prosser Basketball had no dedicated website. Rayce relied entirely on cold email outreach—leaving nowhere for prospects to verify his legitimacy, understand his program, or take the next step.",
+    solution:
+      "A lean four-page site—Home, About, Services, and Contact—designed to convert cold traffic into email inquiries. It works as both a discovery tool and a credibility landing page for outbound outreach, funneling parents and players toward contact via form or email. Placeholder zones for photography, testimonials, and social media were built in from the start so the site can grow without a redesign.",
+    overview:
+      "Prosser Basketball LLC runs Playmakers Academy, offering individual and small group basketball skills training for youth and teen athletes in Eau Claire, Wisconsin. Founder Rayce Prosser develops both the physical and mental sides of the game—teaching when and why to use skills, not just how. He also serves as assistant varsity coach at Eau Claire Memorial High School and 14U head coach with Wisconsin Playmakers.",
+    designDecisions: [
+      "Dark charcoal backgrounds with electric orange accents and condensed athletic typography—premium and credible from the first scroll",
+      "Dual-focus coaching philosophy on the homepage: physical and mental development, competitive stamina, and attention to detail",
+      "Trust built through authority signals—Memorial and Wisconsin Playmakers coaching roles, 40+ athletes trained—with testimonial components ready to populate",
+      "Copy and layout speak to both parents and teen players without separate pages; persistent Get in Touch CTA in navigation",
+    ],
+    outcome:
+      "The site gives Rayce a professional online home that validates cold outreach, builds passive trust for local search, and gives curious parents and players a clear path to inquire—without relying on a single email to make the case.",
+    accent: "from-orange-500/20 to-neutral-900/15",
+    previewImage: "/images/ProsserBasketballSite.png",
+    previewDomain: "prosser-basketball.vercel.app",
+    liveUrl: "https://prosser-basketball.vercel.app/",
+    portfolioNote:
+      "Personal portfolio project: a site built to demonstrate web design for a local basketball skills training business. Not an official client engagement.",
   },
   {
     slug: "states-ive-visited",
@@ -88,33 +117,37 @@ export const projects: Project[] = [
     stack: "Next.js 14, React, TypeScript, Neon Postgres, Tailwind CSS, Vercel",
   },
   {
-    slug: "prosser-basketball",
-    title: "Prosser Basketball",
-    category: "Basketball Training Website",
+    slug: "ec-restaurant-picker",
+    title: "Eau Claire Restaurant Picker",
+    category: "Personal Utility App",
+    featured: false,
     shortDescription:
-      "A four-page site for an Eau Claire skills trainer: credibility signals, dual-audience copy, and a contact funnel built for cold outreach.",
+      "A local dining decision helper—filter by mood or cuisine, then randomly pick three Eau Claire restaurants when you can't choose where to eat.",
     problem:
-      "Despite a compelling coaching philosophy, real community credentials, and 40+ athletes already trained, Prosser Basketball had no dedicated website. Rayce relied entirely on cold email outreach—leaving nowhere for prospects to verify his legitimacy, understand his program, or take the next step.",
+      "Deciding where to eat in Eau Claire sounds simple until you've scrolled the same lists, vetoed the same spots, and still have no plan. Group chats stall on \"I don't care, you pick,\" and even a personal shortlist gets stale when mood and cuisine type matter as much as the restaurant name.",
     solution:
-      "A lean four-page site—Home, About, Services, and Contact—designed to convert cold traffic into email inquiries. It works as both a discovery tool and a credibility landing page for outbound outreach, funneling parents and players toward contact via form or email. Placeholder zones for photography, testimonials, and social media were built in from the start so the site can grow without a redesign.",
+      "A single-page picker with category filters—pizza, Mexican, Asian, date night, takeout, and more—then a Pick 3 action that surfaces three random options from a curated local list. Pick Again reshuffles without leaving the page, so the app narrows the field first and lets chance break the tie.",
     overview:
-      "Prosser Basketball LLC runs Playmakers Academy, offering individual and small group basketball skills training for youth and teen athletes in Eau Claire, Wisconsin. Founder Rayce Prosser develops both the physical and mental sides of the game—teaching when and why to use skills, not just how. He also serves as assistant varsity coach at Eau Claire Memorial High School and 14U head coach with Wisconsin Playmakers.",
+      "Eau Claire Restaurant Picker is a personal utility I built and use when I want to go out but can't settle on a place. It isn't a review site or a map—it's a lightweight decision tool focused on my actual rotation of local restaurants. The public experience is intentionally minimal: choose a category, get three suggestions, reshuffle if needed. I maintain the restaurant list myself as spots open, close, or shift in and out of favor.",
     designDecisions: [
-      "Dark charcoal backgrounds with electric orange accents and condensed athletic typography—premium and credible from the first scroll",
-      "Dual-focus coaching philosophy on the homepage: physical and mental development, competitive stamina, and attention to detail",
-      "Trust built through authority signals—Memorial and Wisconsin Playmakers coaching roles, 40+ athletes trained—with testimonial components ready to populate",
-      "Copy and layout speak to both parents and teen players without separate pages; persistent Get in Touch CTA in navigation",
+      "Hero food photography with a dark gradient overlay—sets context immediately without competing with the picker controls",
+      "Category grid before randomization so \"date night\" and \"fast food\" don't pull from the same pool",
+      "Pick 3 instead of a single result—enough variety to spark a real choice without reopening the decision spiral",
+      "Cream background, terracotta primary CTA, and sky-blue active states—warm and appetizing without feeling like a generic restaurant directory",
+      "Pick Again below results for fast reshuffles when all three misses land at once",
     ],
     outcome:
-      "The site gives Rayce a professional online home that validates cold outreach, builds passive trust for local search, and gives curious parents and players a clear path to inquire—without relying on a single email to make the case.",
-    accent: "from-orange-500/20 to-neutral-900/15",
-    previewImage: "/images/ProsserBasketballSite.png",
-    previewDomain: "prosser-basketball.vercel.app",
-    liveUrl: "https://prosser-basketball.vercel.app/",
+      "The app turns a recurring \"where should we eat?\" loop into a thirty-second ritual—filter, pick, go—while keeping the list personal and current instead of relying on generic recommendation engines.",
+    accent: "from-sky-400/20 to-amber-600/15",
+    previewImage: "/images/ECRestaurantPicker.png",
+    previewDomain: "ec-restaurant-picker.vercel.app",
+    liveUrl: "https://ec-restaurant-picker.vercel.app/",
     portfolioNote:
-      "Personal portfolio project: a site built to demonstrate web design for a local basketball skills training business. Not an official client engagement.",
+      "Personal portfolio project: a live utility app I built and maintain for my own dining decisions. Not a client engagement.",
   },
 ];
+
+export const featuredProjects = projects.filter((p) => p.featured !== false);
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);

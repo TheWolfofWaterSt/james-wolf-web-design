@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { projects } from "@/lib/projects";
+import { featuredProjects } from "@/lib/projects";
 import ProjectCard from "./ProjectCard";
 
 export default function FeaturedWork() {
@@ -13,8 +13,8 @@ export default function FeaturedWork() {
               Portfolio projects across industries
             </h2>
             <p className="text-body mt-4">
-              Case studies for a manufacturer redesign, a personal travel app,
-              and a basketball training site—portfolio projects built to show
+              Case studies for a manufacturer redesign, a basketball training
+              site, and a personal travel app—portfolio projects built to show
               range across marketing sites and full-stack product work.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function FeaturedWork() {
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-3">
-          {projects.map((project) => (
+          {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
