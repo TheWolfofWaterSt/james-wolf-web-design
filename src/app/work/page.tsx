@@ -9,7 +9,7 @@ import { projects } from "@/lib/projects";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Case studies for manufacturing, basketball training, and plumbing websites.",
+    "Case studies for manufacturing, a personal travel app, and basketball training.",
 };
 
 export default function WorkPage() {
@@ -17,13 +17,16 @@ export default function WorkPage() {
     <>
       <PageHeader
         kicker="Portfolio"
-        title="Concept redesigns"
-        description="Three portfolio projects—one personal manufacturer redesign, a basketball training site built for fun, and a fictional plumbing concept."
+        title="Portfolio projects"
+        description="Three portfolio projects—a manufacturer redesign concept, a full-stack travel tracking app, and a basketball training site."
       />
 
       <section className="section-padding !pt-8">
         <div className="container-content">
-          <FictionalNotice className="mb-12" />
+          <FictionalNotice
+            className="mb-12"
+            message="These case studies mix personal builds and concept redesigns. Each project page notes whether content is fictional, based on public sources, or a live app I maintain."
+          />
 
           <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (

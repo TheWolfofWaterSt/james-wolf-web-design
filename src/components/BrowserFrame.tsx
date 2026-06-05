@@ -18,13 +18,13 @@ export function BrowserChrome({ variant, domain }: BrowserChromeProps) {
       <span className="h-2.5 w-2.5 rounded-full bg-[#FEBC2E]" aria-hidden />
       <span className="h-2.5 w-2.5 rounded-full bg-[#28C840]" aria-hidden />
       <div
-        className={`mx-3 flex h-5 flex-1 items-center rounded px-2.5 text-[11px] ${
+        className={`mx-3 flex h-5 min-w-0 flex-1 items-center overflow-hidden rounded px-2.5 text-[10px] leading-none ${
           isBefore
             ? "bg-[#d8d8d3] text-ink-muted"
             : "bg-ink-secondary text-ink-faint"
         }`}
       >
-        {domain}
+        <span className="truncate whitespace-nowrap">{domain}</span>
       </div>
     </div>
   );

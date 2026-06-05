@@ -10,12 +10,12 @@ export default function FeaturedWork() {
           <div className="max-w-2xl">
             <p className="label-kicker">Featured work</p>
             <h2 id="work-heading" className="heading-section mt-3">
-              Concept redesigns for local industries
+              Portfolio projects across industries
             </h2>
             <p className="text-body mt-4">
-              Case studies for manufacturing, basketball training, and
-              plumbing—two personal portfolio projects and a fictional concept
-              for demonstration.
+              Case studies for a manufacturer redesign, a personal travel app,
+              and a basketball training site—portfolio projects built to show
+              range across marketing sites and full-stack product work.
             </p>
           </div>
           <Link

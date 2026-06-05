@@ -111,6 +111,35 @@ export default async function ProjectPage({ params }: Props) {
             </ul>
           </section>
 
+          {project.technicalHighlights?.length ? (
+            <section>
+              <h2 className="heading-section text-xl sm:text-2xl">
+                Technical highlights
+              </h2>
+              <ul className="mt-6 space-y-4">
+                {project.technicalHighlights.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-4 rounded-xl border border-surface-border bg-surface px-5 py-4 text-sm text-ink-muted sm:text-base"
+                  >
+                    <span
+                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
+                      aria-hidden
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
+          {project.stack ? (
+            <section>
+              <h2 className="heading-section text-xl sm:text-2xl">Stack</h2>
+              <p className="text-body mt-4">{project.stack}</p>
+            </section>
+          ) : null}
+
           <section>
             <h2 className="heading-section text-xl sm:text-2xl">Outcome</h2>
             <p className="text-body mt-4">{project.outcome}</p>
