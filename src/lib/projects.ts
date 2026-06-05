@@ -15,6 +15,7 @@ export type Project = {
   previewDomain?: string;
   previewConcept?: "hvac" | "plumbing";
   liveUrl?: string;
+  demoAccess?: { label: string; value: string };
   portfolioNote?: string;
   technicalHighlights?: string[];
   stack?: string;
@@ -76,6 +77,7 @@ export const projects: Project[] = [
     previewImage: "/images/StatesIveVisited.png",
     previewDomain: "state-travels.vercel.app",
     liveUrl: "https://state-travels.vercel.app/",
+    demoAccess: { label: "Admin password", value: "123456" },
     portfolioNote:
       "Personal portfolio project: a full-stack travel tracking app I built and maintain. Not a client engagement.",
     technicalHighlights: [

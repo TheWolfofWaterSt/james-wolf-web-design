@@ -53,15 +53,29 @@ export default async function ProjectPage({ params }: Props) {
           <h1 className="heading-display mt-3">{project.title}</h1>
           <p className="text-body mt-6 max-w-2xl">{project.shortDescription}</p>
 
-          {project.liveUrl ? (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-accent mt-6 inline-flex items-center gap-2 text-sm"
-            >
-              View live demo →
-            </a>
+          {project.liveUrl || project.demoAccess ? (
+            <div className="mt-6 flex flex-col gap-2">
+              {project.liveUrl ? (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-accent inline-flex items-center gap-2 text-sm"
+                >
+                  View live demo →
+                </a>
+              ) : null}
+              {project.demoAccess ? (
+                <p className="text-sm text-ink-muted">
+                  <span className="font-medium text-ink">
+                    {project.demoAccess.label}:
+                  </span>{" "}
+                  <code className="rounded bg-surface px-1.5 py-0.5 font-mono text-sm text-ink">
+                    {project.demoAccess.value}
+                  </code>
+                </p>
+              ) : null}
+            </div>
           ) : null}
 
           <ProjectBrowserPreview
