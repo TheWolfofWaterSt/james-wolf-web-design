@@ -7,12 +7,14 @@ export default function HeroSection() {
     <section className="bg-surface-subtle pb-16 md:pb-20">
       <div className="mx-auto w-full max-w-[1100px] px-5 pt-10 md:pt-14">
         <h1
-          className="animate-fade-up mx-auto max-w-[720px] text-center font-display text-[32px] font-bold leading-[1.08] tracking-[-0.04em] text-ink md:text-[clamp(36px,5vw,60px)] md:tracking-[-0.05em]"
+          className="animate-fade-up mx-auto max-w-[840px] text-center font-display text-[clamp(28px,4.5vw,60px)] font-bold leading-[1.08] tracking-[-0.04em] text-ink md:tracking-[-0.05em]"
           style={{ animationDelay: "0ms" }}
         >
-          Your website should work
+          Your work is great.
           <br />
-          as hard as <span className="text-accent">you do.</span>
+          <span className="inline-block whitespace-nowrap">
+            Your <span className="text-accent">website</span> should be too.
+          </span>
         </h1>
 
         <p
