@@ -25,8 +25,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "panel-systems-room-dividers",
-    title: "Panel Systems Room Dividers",
+    slug: "panel-systems-manufacturing",
+    title: "Panel Systems Manufacturing",
     category: "Manufacturing Website",
     shortDescription:
       "A modern rebuild concept for a Wisconsin room-divider manufacturer. Product catalog, trust content, and a quote funnel built for institutional buyers.",
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     heroImage: "/images/panel-systems-hero-small.jpg",
     heroImageLarge: "/images/panel-systems-hero-large.jpg",
     previewImage: "/images/NewPanelSystemsSite.png",
-    previewDomain: "mueller-room-dividers.vercel.app",
-    liveUrl: "https://mueller-room-dividers.vercel.app/",
+    previewDomain: "panel-systems-manufacturing.vercel.app",
+    liveUrl: "https://panel-systems-manufacturing.vercel.app/",
     portfolioNote:
       "Personal portfolio project: a concept redesign based on publicly available content from Panel Systems Manufacturing (roomdividers.org). Not an official client engagement.",
   },
