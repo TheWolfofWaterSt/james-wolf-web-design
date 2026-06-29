@@ -12,15 +12,15 @@ const setupIncludes = [
   "Design + development",
   "Mobile optimization",
   "Basic SEO setup",
-  "Contact form scaffolding (opens client's email app)",
+  "Contact form (sends messages via email)",
   "Deployment + launch",
 ] as const;
 
 const careIncludes = [
   "Hosting",
-  "Contact form functionality (sends email straight from contact form)",
+  "Contact form (reliable email delivery system)",
   "Security updates",
-  "Small edits",
+  "Small edits and content changes",
   "Uptime monitoring",
   "Basic support",
 ] as const;
@@ -103,7 +103,7 @@ export default function PricingPage() {
             <PricingBlock
               label="Website Care Plan"
               price="$50 – $100 / month"
-              note="Recommended for a stress-free experience—I handle hosting, updates, and maintenance so you can focus on your business."
+              note="A fully managed experience—I handle hosting, updates, and ongoing maintenance so your website stays reliable and up to date."
               includes={careIncludes}
             />
           </div>
