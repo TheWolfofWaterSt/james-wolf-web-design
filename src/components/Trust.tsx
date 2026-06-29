@@ -1,24 +1,5 @@
 const iconClass = "h-5 w-5 shrink-0 text-accent";
 
-function ClockIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={iconClass}
-      aria-hidden
-    >
-      <circle cx="12" cy="12" r="10" />
-      <polyline points="12 6 12 12 16 14" />
-    </svg>
-  );
-}
-
 function SmartphoneIcon() {
   return (
     <svg
@@ -60,7 +41,7 @@ function MousePointerClickIcon() {
   );
 }
 
-function LayoutGridIcon() {
+function UserIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -73,38 +54,55 @@ function LayoutGridIcon() {
       className={iconClass}
       aria-hidden
     >
-      <rect width="7" height="7" x="3" y="3" rx="1" />
-      <rect width="7" height="7" x="14" y="3" rx="1" />
-      <rect width="7" height="7" x="14" y="14" rx="1" />
-      <rect width="7" height="7" x="3" y="14" rx="1" />
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
+    </svg>
+  );
+}
+
+function CheckCircleIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={iconClass}
+      aria-hidden
+    >
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+      <polyline points="22 4 12 14.01 9 11.01" />
     </svg>
   );
 }
 
 const trustPoints = [
   {
-    icon: ClockIcon,
-    title: "Fast delivery",
+    icon: UserIcon,
+    title: "No tech experience needed",
     description:
-      "Focused scopes and clear milestones—no endless revision cycles.",
+      "Never built a website before? That's fine. I walk you through what I need from you—and handle everything else.",
   },
   {
     icon: SmartphoneIcon,
     title: "Mobile-first design",
     description:
-      "Most local customers search on phones; layouts are built for small screens first.",
+      "Most customers search on their phones. Your site will look great and work well on every screen size.",
   },
   {
     icon: MousePointerClickIcon,
-    title: "Conversion-focused layouts",
+    title: "Built to bring in customers",
     description:
-      "Calls, forms, and booking paths placed where visitors actually decide.",
+      "Clear calls to action, easy contact paths, and layouts that help visitors decide to reach out.",
   },
   {
-    icon: LayoutGridIcon,
-    title: "Clean modern UX",
+    icon: CheckCircleIcon,
+    title: "Hands-off launch",
     description:
-      "Whitespace, hierarchy, and plain language—professional without clutter.",
+      "You buy the domain. I handle hosting, your contact form, and getting everything connected and live.",
   },
 ] as const;
 
@@ -118,7 +116,7 @@ export default function Trust() {
         <div className="text-center">
           <p className="label-kicker">Why work with me</p>
           <h2 id="trust-heading" className="heading-section mt-3">
-            Built for local businesses that need results
+            You focus on your business. I&apos;ll handle the website.
           </h2>
         </div>
 

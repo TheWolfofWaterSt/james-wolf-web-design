@@ -7,7 +7,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "James Wolf — freelance web designer and developer focused on modern websites for local businesses.",
+    "James Wolf — freelance web designer helping small businesses get online without the tech headaches. You work directly with me from start to finish.",
 };
 
 const principles = [
@@ -39,7 +39,7 @@ export default function AboutPage() {
       <PageHeader
         kicker="About"
         title="Hi, I'm James Wolf"
-        description="Freelance web designer and developer helping local service businesses look professional online and convert more visitors into leads. You work directly with me—no agency handoffs, no mystery about who is building your site."
+        description="Freelance web designer helping small businesses get a professional website without the technical headaches. You work directly with me—no agency handoffs, no wondering who is actually building your site."
       />
 
       <section className="section-padding !pt-8">
@@ -49,20 +49,23 @@ export default function AboutPage() {
             <div className="space-y-6 text-base leading-relaxed text-ink-muted sm:text-lg">
               <p>
                 I work solo by choice. That means you work directly with the
-                person designing and building your site. No handoffs, no agency
+                person designing and building your site—no handoffs, no agency
                 overhead, and no wondering who is actually doing the work.
               </p>
               <p>
-                My focus is local businesses: service providers who need a website that
-                feels modern, loads fast, and makes it easy for customers to
-                call, book, or request a quote.
+                My focus is small businesses: owners who are great at what they
+                do but would rather not deal with hosting, domains, contact
+                forms, or any of the technical side. Maybe you don&apos;t have
+                a website at all yet. Maybe the one you have is outdated or
+                embarrassing. Either way, I handle the build and setup so you
+                can stay focused on your customers.
               </p>
               <p>
-                The work in this portfolio is intentionally fictional. There are 
-                concept redesigns that show how I think about layout, hierarchy, and
+                The work in this portfolio is intentionally fictional—concept
+                redesigns that show how I think about layout, hierarchy, and
                 conversion for each industry. When we work together, the goal is
                 the same: understand your business, design with your customers
-                in mind, and ship something you are proud to share.
+                in mind, and ship something you&apos;re proud to share.
               </p>
             </div>
 
@@ -73,11 +76,11 @@ export default function AboutPage() {
               </li>
               <li className="flex gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
-                Focused on local service businesses across Wisconsin and beyond
+                I handle hosting, domain setup, contact forms, and all the technical work
               </li>
               <li className="flex gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
-                Clear timelines and straightforward communication from day one
+                No website or technical experience required to get started
               </li>
             </ul>
           </div>
@@ -97,7 +100,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Process introDescription="When we work together, here's what to expect at every step." />
+      <Process introDescription="When we work together, I'll guide you through the few decisions only you can make—and handle everything else, from design through launch." />
 
       <section
         className="section-padding bg-surface"

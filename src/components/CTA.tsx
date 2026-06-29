@@ -11,8 +11,8 @@ type CTAProps = {
 };
 
 export default function CTA({
-  headline = "Need a new website—or a better one?",
-  subtext = "Tell me about your business and your goals, and I'll reply with clear next steps.",
+  headline = "Don't have a website yet? That's completely fine.",
+  subtext = "Tell me about your business and I'll handle the rest—from design and build to hosting and launch.",
   primaryLabel = "Contact Me",
   primaryHref = "/contact",
   secondaryLabel,

@@ -5,7 +5,8 @@ import { site, sitePhoneTel } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch about a new website or redesign for your local business.",
+  description:
+    "Get in touch about a new website for your small business. No technical experience required—I handle the build, hosting, and setup.",
 };
 
 export default function ContactPage() {
@@ -14,7 +15,7 @@ export default function ContactPage() {
       <PageHeader
         kicker="Contact"
         title="Let's talk about your website"
-        description="Share a bit about your business and what you are looking for. I typically respond within one to two business days."
+        description="Share a bit about your business and what you're looking for—even if you're not sure where to start. I typically respond within one to two business days."
       />
 
       <section className="section-padding !pt-8">
@@ -54,9 +55,9 @@ export default function ContactPage() {
             <div className="card">
               <h2 className="text-lg font-semibold text-ink">Good fit if you are…</h2>
               <ul className="mt-4 space-y-3 text-sm text-ink-muted">
-                <li>A local service business needing a new or refreshed site</li>
-                <li>Ready to replace an outdated template with something custom</li>
-                <li>Focused on mobile customers and clear calls to action</li>
+                <li>A small business owner who&apos;d rather focus on customers than website tech</li>
+                <li>Starting from scratch—you don&apos;t need an existing site or any technical know-how</li>
+                <li>Ready for a professional site that makes it easy for people to find and contact you</li>
               </ul>
             </div>
           </aside>

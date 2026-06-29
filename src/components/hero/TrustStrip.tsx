@@ -76,10 +76,10 @@ function StarIcon() {
 }
 
 const items = [
-  { icon: ClockIcon, label: "Fast turnaround" },
+  { icon: StarIcon, label: "Built for small businesses" },
   { icon: SmartphoneIcon, label: "Mobile-first by default" },
-  { icon: SearchIcon, label: "SEO-ready from day one" },
-  { icon: StarIcon, label: "Local business specialists" },
+  { icon: SearchIcon, label: "No tech experience needed" },
+  { icon: ClockIcon, label: "Hands-off setup & launch" },
 ];
 
 export default function TrustStrip() {

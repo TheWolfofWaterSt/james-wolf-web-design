@@ -5,25 +5,25 @@ const steps = [
     number: "01",
     title: "Discover",
     description:
-      "We talk about your business, your customers, and what the site needs to accomplish. Whether that means improving what you have or building from scratch.",
+      "We talk about your business, your customers, and what you need the site to do. No technical background required—just a clear picture of what you offer and who you're trying to reach.",
   },
   {
     number: "02",
     title: "Plan",
     description:
-      "We map out pages, content, and how visitors will reach you, so there's no guesswork once design begins.",
+      "We map out pages, content, and how visitors will reach you. I'll tell you what I need from you and handle the rest—no guesswork once design begins.",
   },
   {
     number: "03",
     title: "Design & build",
     description:
-      "I design and develop your site mobile-first. That means clean layouts, fast load times, and structure that supports local search without template bloat.",
+      "I design and develop your site mobile-first. Clean layouts, fast load times, and structure that helps local customers find you—without template bloat or jargon.",
   },
   {
     number: "04",
     title: "Launch",
     description:
-      "We go live, test everything on web and mobile, and handle the launch details so your site is ready for real customers.",
+      "You purchase your domain; I handle hosting, connect your contact form so inquiries land in your inbox, and get everything live. When we launch, it just works.",
   },
 ] as const;
 
@@ -44,7 +44,7 @@ type ProcessProps = {
 };
 
 export default function Process({
-  introDescription = "Whether you're replacing an outdated site or starting from zero, you'll know what's happening at every step.",
+  introDescription = "Never had a website before? No problem. I'll guide you through the few decisions only you can make, and handle the rest—from design through launch.",
   className = "",
 }: ProcessProps) {
   return (

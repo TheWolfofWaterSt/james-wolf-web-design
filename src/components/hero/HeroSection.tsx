@@ -21,8 +21,10 @@ export default function HeroSection() {
           className="animate-fade-up mx-auto mb-9 mt-6 max-w-[500px] text-center text-lg font-normal leading-relaxed text-ink-muted"
           style={{ animationDelay: "100ms" }}
         >
-          I build and rebuild local business websites into modern, professional
-          tools that actually bring in customers.
+          I help small businesses get online without the tech headaches—whether
+          you&apos;re starting from scratch or finally replacing an outdated
+          site. I handle the design, build, and setup so you can focus on your
+          customers.
         </p>
 
         <div
