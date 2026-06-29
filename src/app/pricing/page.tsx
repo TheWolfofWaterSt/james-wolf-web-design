@@ -45,13 +45,15 @@ function PricingBlock({
   includes: readonly string[];
 }) {
   return (
-    <article className="card flex h-full flex-col">
+    <article className="card flex flex-col lg:row-span-4 lg:grid lg:grid-rows-subgrid">
       <p className="label-kicker">{label}</p>
       <p className="mt-4 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
         {price}
       </p>
-      <p className="mt-3 text-sm leading-relaxed text-ink-muted">{note}</p>
-      <ul className="mt-8 space-y-3 border-t border-surface-border pt-8 text-sm text-ink-muted">
+      <p className="mt-3 self-start text-sm leading-relaxed text-ink-muted">
+        {note}
+      </p>
+      <ul className="w-full space-y-3 self-start border-t border-surface-border pt-5 text-sm text-ink-muted">
         {includes.map((item) => (
           <li key={item} className="flex gap-3">
             <span
@@ -93,7 +95,7 @@ export default function PricingPage() {
           <h2 id="pricing-blocks-heading" className="sr-only">
             Pricing
           </h2>
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-8 lg:grid-cols-2 lg:grid-rows-[auto_auto_auto_1fr]">
             <PricingBlock
               label="Website Setup"
               price="$1,200 – $2,500"
