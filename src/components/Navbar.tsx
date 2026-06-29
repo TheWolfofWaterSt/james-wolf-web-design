@@ -8,6 +8,7 @@ import { site } from "@/lib/site";
 const navLinks = [
   { href: "/work", label: "Work" },
   { href: "/#process", label: "Process" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
 ];
 
@@ -33,9 +34,9 @@ export default function Navbar() {
             const isActive =
               link.href === "/work"
                 ? pathname.startsWith("/work")
-                : link.href === "/about"
-                  ? pathname === "/about"
-                  : false;
+                : link.href.startsWith("/#")
+                  ? false
+                  : pathname === link.href;
 
             return (
               <li key={link.href}>

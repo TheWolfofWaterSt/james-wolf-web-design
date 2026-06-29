@@ -4,6 +4,7 @@ import { site, sitePhoneTel } from "@/lib/site";
 
 const footerLinks = [
   { href: "/work", label: "Work" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
