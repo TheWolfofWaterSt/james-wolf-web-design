@@ -98,7 +98,7 @@ export default function PricingPage() {
           <div className="grid gap-8 lg:grid-cols-2 lg:grid-rows-[auto_auto_auto_1fr]">
             <PricingBlock
               label="Website Setup"
-              price="$1,200 – $2,500"
+              price="$1,500 – $3,000"
               note="Most small business websites fall near the lower end of this range."
               includes={setupIncludes}
             />
